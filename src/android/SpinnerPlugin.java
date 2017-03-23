@@ -84,6 +84,12 @@ public final class SpinnerPlugin extends CordovaPlugin {
               countDownTimer.cancel();
               countDownTimer = null;
           }
+          try {
+              this.activityStop(callbackContext);
+          }catch (JSONException ex){
+
+          }
+
           callbackContext.success();
 
       }
