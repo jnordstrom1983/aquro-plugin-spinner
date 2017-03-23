@@ -3,6 +3,7 @@ package net.justin_credible.cordova;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.graphics.drawable.ColorDrawable;
+import android.os.CountDownTimer;
 
 import net.justin_credible.cordova.FakeR;
 
