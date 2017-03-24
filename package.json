@@ -1,6 +1,6 @@
 {
   "name": "aquro-plugin-spinner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Cordova plugin to prevent user interaction using an animated spinner overlay during a blocking operation.",
   "cordova": {
     "id": "aquro-plugin-spinner",
