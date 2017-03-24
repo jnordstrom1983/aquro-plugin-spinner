@@ -65,7 +65,7 @@ SpinnerPlugin.schedule = function activityStart(labelText, options, timeout, suc
 		options.dimBackground = true;
 	}
 
-	if (!isNaN(timeout)) {
+	if (isNaN(timeout)) {
 		timeout = 1000;
 	}
 
