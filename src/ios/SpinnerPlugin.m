@@ -1,7 +1,7 @@
 //
 //  SpinnerPlugin.m
 //
-//  
+//
 
 #import "SpinnerPlugin.h"
 #import <objc/runtime.h>
@@ -32,7 +32,7 @@ CDVInvokedUrlCommand *scheduleCommand;
     double timeout = [[command argumentAtIndex:2] longValue];
     timeout = timeout / 1000;
     scheduleTimer =[NSTimer timerWithTimeInterval: timeout target:self selector:@selector(timerFired:) userInfo:nil  repeats:FALSE ] ;
-    [[NSRunLoop currentRunLoop] addTimer:scheduleTimer forMode:NSDefaultRunLoopMode];
+    [[NSRunLoop currentRunLoop] addTimer:scheduleTimer forMode:UITrackingRunLoopMode];
 
 
     CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
